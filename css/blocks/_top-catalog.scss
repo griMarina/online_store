@@ -1,0 +1,36 @@
+.top {
+    background-color: #F8F3F4;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    @include flex (space-between);
+}
+
+.top-title {
+    font-size: 24px;
+    line-height: 29px;
+    color: $main-color;
+}
+
+.top-breadcrumbs a:hover {
+    color: $main-color;
+}
+
+.top-link {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.home-link::after {
+    content: "/\00a0";
+    color: #636363;
+    padding-left: 5px;
+}
+
+.men-link::after {
+    content: "/\00a0";
+    color: #636363;
+    padding-left: 5px;
+}
