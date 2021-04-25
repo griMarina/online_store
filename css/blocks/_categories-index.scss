@@ -1,31 +1,51 @@
-.promo {
-    background-color: #F1E4E6;
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 65px;
+    padding-bottom: 96px;
 }
 
-.promo-wrap {
-    background-image: url(../img/promo-bg.png);
-    min-height: 764px;
-    background-position-x: -226px;
-    background-position-y: bottom;
-    background-repeat: no-repeat;
-    @include flex (flex-end);
+.category-item {
+    background-color: #211616;
+    width: 360px;
+    height: 260px;
+    color: #FFFFFF;
+    text-align: center;
+    @include flex ();
 }
 
-.promo-title {
-    width: 50%;
-    border-left: 12px solid $main-color;
-    padding-left: 16px;
+.category-title {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.category-title-pink {
     font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
 }
 
-.promo-title-bold {
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 58px;
+.category-women {
+    background-image: url(../img/bg-cat-women.png);
+    background-repeat: no-repeat;
 }
 
-.promo-title-pink {
-    color: $main-color;
+.category-men {
+    background-image: url(../img/bg-cat-men.png);
+    background-repeat: no-repeat;
+}
+
+.category-kids {
+    background-image: url(../img/bg-cat-kids.png);
+    background-repeat: no-repeat;
+}
+
+.category-accesories {
+    width: 100%;
+    height: 180px;
+    margin-top: 30px;
+    background-image: url(../img/bg-cat-accesories.png);
+    background-repeat: no-repeat;
 }
