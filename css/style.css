@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -255,44 +257,69 @@ body {
   color: #fff;
 }
 
-.promo {
-  background-color: #F1E4E6;
-}
-
-.promo-wrap {
-  background-image: url(../img/promo-bg.png);
-  min-height: 764px;
-  background-position-x: -226px;
-  background-position-y: bottom;
-  background-repeat: no-repeat;
+.categories {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 65px;
+  padding-bottom: 96px;
+}
+
+.category-item {
+  background-color: #211616;
+  width: 360px;
+  height: 260px;
+  color: #FFFFFF;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.promo-title {
-  width: 50%;
-  border-left: 12px solid #F16D7F;
-  padding-left: 16px;
+.category-title {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.category-title-pink {
   font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-}
-
-.promo-title-bold {
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 58px;
-}
-
-.promo-title-pink {
+  font-size: 24px;
+  line-height: 29px;
   color: #F16D7F;
+}
+
+.category-women {
+  background-image: url(../img/bg-cat-women.png);
+  background-repeat: no-repeat;
+}
+
+.category-men {
+  background-image: url(../img/bg-cat-men.png);
+  background-repeat: no-repeat;
+}
+
+.category-kids {
+  background-image: url(../img/bg-cat-kids.png);
+  background-repeat: no-repeat;
+}
+
+.category-accesories {
+  width: 100%;
+  height: 180px;
+  margin-top: 30px;
+  background-image: url(../img/bg-cat-accesories.png);
+  background-repeat: no-repeat;
 }
 
 .text {
@@ -537,6 +564,209 @@ body {
 
 .catalog-pagination-link .fas {
   color: #000;
+}
+
+.slider {
+  min-height: 777px;
+  padding-top: 11px;
+  background-color: #F7F7F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-bottom: 64px;
+}
+
+.slider__btn {
+  border: none;
+  background-color: rgba(42, 42, 42, 0.15);
+  padding: 13px 17px;
+  font-size: 21px;
+  position: absolute;
+}
+
+.slider__btn:hover {
+  color: #F16D7F;
+}
+
+.slider__btn_left {
+  left: 0;
+}
+
+.slider__btn_right {
+  right: 0;
+}
+
+.product-cards-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 98px;
+}
+
+.description {
+  margin-bottom: 128px;
+}
+
+.description__wrap {
+  margin-top: -64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-color: #FFFFFF;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  border: 1px solid #EAEAEA;
+}
+
+.description__cat-title {
+  color: #F16D7F;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.description__line {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.description__product-title {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  margin-bottom: 48px;
+}
+
+.description__product-text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5E5E5E;
+  max-width: 555px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.description__product-price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+}
+
+.description__hr {
+  width: 642px;
+  border: none;
+  border-top: 1px solid #EAEAEA;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.description__sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.description__sort-title {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  margin-right: 23px;
+}
+
+.description__sort-title::-webkit-details-marker {
+  display: none;
+}
+
+.description__sort-title::after {
+  content: url(../img/arrow-sort-icon.svg);
+  padding-left: 10px;
+}
+
+.description__color-box {
+  width: 79px;
+  padding: 7px 0 3px 9px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  position: absolute;
+}
+
+.description__size-box {
+  width: 79px;
+  padding: 10px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  position: absolute;
+}
+
+.description__size-box-label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+}
+
+.description__size-input {
+  margin-right: 9px;
+}
+
+.description__quant-box {
+  width: 79px;
+  padding: 10px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  position: absolute;
+}
+
+.description__btn {
+  padding: 15px 57px 9px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #F16D7F;
+  border-radius: 0;
+  background-color: #FFFFFF;
+}
+
+.description__btn-text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+  vertical-align: middle;
+  margin-left: 23px;
 }
 
 @font-face {
