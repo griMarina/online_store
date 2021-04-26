@@ -328,4 +328,117 @@ body {
 .social-link {
     text-decoration: none;
     margin-right: 7px;
+
+}
+
+/* catalog styles */
+
+.top {
+    background-color: #F8F3F4;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-title {
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.top-breadcrumbs a:active {
+    color: #F16D7F;
+}
+
+.top-link {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.home-link::after {
+    content: "/\00a0";
+    color: #636363;
+    padding-left: 5px;
+}
+
+.men-link::after {
+    content: "/\00a0";
+    color: #636363;
+    padding-left: 5px;
+}
+
+.product-sorting {
+    display: flex;
+    justify-content: space-between;
+    max-width: 675px;
+    padding-top: 51px;
+    padding-bottom: 64px;
+    margin-left: 16px;
+}
+
+.filter-summary {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.filter-summary::-webkit-details-marker {
+    display: none;
+}
+
+.filter-summary::after {
+    content: url(../img/filter-icon.svg);
+    padding-left: 11px;
+}
+
+.product-sort-list {
+    display: flex;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.product-sort-item {
+    margin-left: 28px;
+}
+
+.product-sort-item::after {
+    content: url(../img/arrow-sort-icon.svg);
+    padding-left: 10px;
+}
+
+.catalog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog-pagination-wrap {
+    width: 284px;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #EBEBEB;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    margin-bottom: 96px;
+}
+
+.catalog-pagination-link {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #EBEBEB;
+}
+
+.catalog-pagination-wrap .link-page:active {
+    color: #F16D7F;
 }
