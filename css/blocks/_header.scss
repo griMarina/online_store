@@ -1,0 +1,20 @@
+.header {
+    background-color: #222222;
+    padding: 20px 0;
+}
+
+.header-wrap {
+    @include flex (space-between);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.logo-link {
+    margin-right: 39px;
+}
+
+.account-link {
+    margin: 0 33px;
+}
