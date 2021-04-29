@@ -495,11 +495,49 @@ body {
   margin-left: 16px;
 }
 
+.product-filter-list {
+  width: 360px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
 .filter-summary {
   display: block;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
+}
+
+.filter__heading {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  border-left: 5px solid #EF5B70;
+  border-bottom: 1px solid #EBEBEB;
+  padding-left: 11px;
+  outline: none;
+}
+
+.filter__heading::-webkit-details-marker {
+  display: none;
+}
+
+.filter__list {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.filter__content {
+  width: 360px;
+  position: absolute;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .filter-summary::-webkit-details-marker {
@@ -827,6 +865,7 @@ body {
 }
 
 .purchasing__item-heading {
+  max-width: 200px;
   margin-bottom: 42px;
   font-weight: 400;
   font-size: 24px;

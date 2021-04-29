@@ -7,11 +7,48 @@
     margin-left: 16px;
 }
 
+.product-filter-list {
+    width: 360px;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
 .filter-summary {
     display: block;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
+}    
+
+.filter {
+
+    &__heading {
+        display: block;
+        @include text-font(400);
+        color: #6F6E6E;
+        border-left: 5px solid #EF5B70;
+        border-bottom: 1px solid #EBEBEB;
+        padding-left: 11px;
+        outline: none;
+    }
+
+    &__heading::-webkit-details-marker {
+        display: none;
+    }
+
+    &__list {
+        list-style-type: none;
+        @include text-font(400);
+        color: #6F6E6E;
+    }
+
+    &__content {
+        width: 360px;
+        position: absolute;
+        background-color: #FFFFFF;
+        box-shadow: $shadow;
+    }
+
 }
 
 .filter-summary::-webkit-details-marker {
