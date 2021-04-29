@@ -1,0 +1,59 @@
+.purchasing {
+    margin-top: 96px;
+
+    &__item {
+        display: flex;
+        width: 652px;
+        position: relative;
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+        font-size: 22px;
+        line-height: 26px;
+        color: #575757;
+        margin-bottom: 40px;
+    }
+    
+    &__item-desc {
+        padding: 22px 97px 62px 31px;
+    }
+
+    &__item-heading {
+        margin-bottom: 42px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222;
+    }
+    
+    &__list {
+        list-style-type: none;
+    }
+
+    &__list-item {
+        margin-bottom: 6px;
+    }
+
+    &__text-price {
+        color: $main-color;
+    }
+
+    &__list-input {
+        width: 44px;
+        margin-left: 24px;
+        font-family: inherit;
+        font-size: 18px;
+        line-height: 22px;
+        color: #656565;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 28px;
+        right: 22px;
+        background-color: #fff;
+        border: none;
+    }
+
+
+}
+
+
