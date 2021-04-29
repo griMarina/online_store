@@ -769,13 +769,20 @@ body {
 
 .purchasing {
   margin-top: 96px;
+  margin-bottom: 128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .purchasing__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 652px;
+  max-width: 652px;
   position: relative;
   -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
           box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
@@ -783,6 +790,10 @@ body {
   line-height: 26px;
   color: #575757;
   margin-bottom: 40px;
+}
+
+.purchasing__item_bottom {
+  margin-bottom: 0px;
 }
 
 .purchasing__item-desc {
@@ -818,12 +829,130 @@ body {
   color: #656565;
 }
 
-.purchasing__btn {
+.purchasing__btn-close {
   position: absolute;
   top: 28px;
   right: 22px;
   background-color: #fff;
   border: none;
+  cursor: pointer;
+}
+
+.purchasing__btn {
+  max-width: 652px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 72px;
+}
+
+.purchasing__btn button {
+  background-color: #FFFFFF;
+  border: 1px solid #A4A4A4;
+  padding: 16px 40px;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+.purchasing__btn a {
+  text-decoration: none;
+  border: 1px solid #A4A4A4;
+  padding: 16px 40px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.purchasing__confirm {
+  width: 360px;
+}
+
+.purchasing__form {
+  margin-bottom: 57px;
+}
+
+.purchasing__form-heading {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.purchasing__form-inp {
+  display: inline-block;
+  width: 100%;
+  padding: 13px 0 16px 17px;
+  margin-top: 21px;
+  border: 1px solid #A4A4A4;
+}
+
+.purchasing__form-btn {
+  margin-top: 24px;
+  padding: 10px 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #A4A4A4;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  cursor: pointer;
+}
+
+.purchasing__total {
+  padding: 42px;
+  background-color: #F5F3F3;
+}
+
+.purchasing__total p {
+  text-align: right;
+}
+
+.purchasing__total span {
+  margin-left: 25px;
+}
+
+.purchasing__total hr {
+  background-color: #E2E2E2;
+  border: 1px solid #E2E2E2;
+  margin-top: 21px;
+  margin-bottom: 17px;
+}
+
+.purchasing__sub {
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  margin-bottom: 12px;
+}
+
+.purchasing__grand {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.purchasing__grand-price {
+  color: #F16D7F;
+}
+
+.purchasing__total-btn {
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background-color: #F16D7F;
+  padding: 16px 41px;
+  border: none;
+  cursor: pointer;
 }
 
 @font-face {
