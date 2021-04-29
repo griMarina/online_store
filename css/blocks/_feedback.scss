@@ -73,4 +73,10 @@
     font-size: 14px;
     line-height: 17px;
     font-family: inherit;
+    cursor: pointer;
+}
+
+.subscribe-form-btn:hover {
+    background-color: #FFFFFF;
+    color: $main-color;
 }

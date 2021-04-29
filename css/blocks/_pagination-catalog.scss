@@ -21,6 +21,13 @@
     color: $main-color;
 }
 
-.catalog-pagination-link .fas {
+.link-prev:not(hover) {
     color: #000;
 }
+
+.link-next:not(hover) {
+    color: #000;
+}
+
+
+

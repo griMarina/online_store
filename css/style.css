@@ -205,6 +205,12 @@ body {
   font-size: 14px;
   line-height: 17px;
   font-family: inherit;
+  cursor: pointer;
+}
+
+.subscribe-form-btn:hover {
+  background-color: #FFFFFF;
+  color: #F16D7F;
 }
 
 .footer {
@@ -560,7 +566,11 @@ body {
   color: #F16D7F;
 }
 
-.catalog-pagination-link .fas {
+.link-prev:not(hover) {
+  color: #000;
+}
+
+.link-next:not(hover) {
   color: #000;
 }
 
@@ -759,6 +769,22 @@ body {
   background-color: #FFFFFF;
 }
 
+.description__btn svg {
+  fill: #EF5B70;
+}
+
+.description__btn:hover {
+  background-color: #F16D7F;
+}
+
+.description__btn:hover svg {
+  fill: #FFFFFF;
+}
+
+.description__btn:hover span {
+  color: #FFFFFF;
+}
+
 .description__btn-text {
   font-size: 16px;
   line-height: 19px;
@@ -860,6 +886,12 @@ body {
   cursor: pointer;
 }
 
+.purchasing__btn button:hover {
+  background-color: #F16D7F;
+  border-color: #F16D7F;
+  color: #FFFFFF;
+}
+
 .purchasing__btn a {
   text-decoration: none;
   border: 1px solid #A4A4A4;
@@ -868,6 +900,12 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+}
+
+.purchasing__btn a:hover {
+  background-color: #F16D7F;
+  border-color: #F16D7F;
+  color: #FFFFFF;
 }
 
 .purchasing__confirm {
@@ -903,6 +941,12 @@ body {
   line-height: 13px;
   color: #4A4A4A;
   cursor: pointer;
+}
+
+.purchasing__form-btn:hover {
+  background-color: #F16D7F;
+  border: 1px solid #F16D7F;
+  color: #FFFFFF;
 }
 
 .purchasing__total {
@@ -953,6 +997,12 @@ body {
   padding: 16px 41px;
   border: none;
   cursor: pointer;
+}
+
+.purchasing__total-btn:hover {
+  color: #F16D7F;
+  background-color: #FFFFFF;
+  border: 1px solid #F16D7F;
 }
 
 @font-face {
