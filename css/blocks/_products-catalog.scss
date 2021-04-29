@@ -1,0 +1,45 @@
+.product-sorting {
+    display: flex;
+    justify-content: space-between;
+    max-width: 675px;
+    padding-top: 51px;
+    padding-bottom: 64px;
+    margin-left: 16px;
+}
+
+.filter-summary {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.filter-summary::-webkit-details-marker {
+    display: none;
+}
+
+.filter-icon {
+    margin-left: 11px;
+}
+
+.product-sort-list {
+    display: flex;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.product-sort-item {
+    margin-left: 28px;
+}
+
+.product-sort-item::after {
+    content: url(../img/arrow-sort-icon.svg);
+    padding-left: 10px;
+}
+
+.catalog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

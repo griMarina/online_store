@@ -1,0 +1,132 @@
+.description {
+    margin-bottom: 128px;
+
+    &__wrap {
+        margin-top: -64px;
+        @include flex ();
+        flex-direction: column;
+        position: relative;
+        background-color: #FFFFFF;
+        padding-top: 65px;
+        padding-bottom: 65px;
+        border: 1px solid #EAEAEA;
+    }
+
+    &__cat-title {
+        color: $main-color;
+        @include text-font;
+    }
+
+    &__line {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    &__product-title {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        margin-bottom: 48px;
+    }
+
+    &__product-text {
+        @include text-font;
+        color: #5E5E5E;
+        max-width: 555px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    &__product-price {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #EF5B70;
+    }
+
+    &__hr {
+        width: 642px;
+        border: none;
+        border-top: 1px solid #EAEAEA;
+        margin-top: 65px;
+        margin-bottom: 65px;
+    }
+
+    &__sorting {
+        display: flex;
+        position: relative;
+        margin-bottom: 48px;
+    }
+
+    &__sort-title {
+        display: block;
+        @include text-font (normal);
+        color: #6F6E6E;
+        margin-right: 23px;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+
+        &::after {
+            content: url(../img/arrow-sort-icon.svg);
+            padding-left: 10px;
+        }
+    }
+
+    &__color-box {
+        width: 79px;
+        padding: 7px 0 3px 9px;
+        background-color: #FFFFFF;
+        box-shadow: $shadow;
+        position: absolute;
+        
+    }
+
+    &__size-box {
+        width: 79px;
+        padding: 10px;
+        background-color: #FFFFFF;
+        box-shadow: $shadow;
+        position: absolute;
+        
+        
+    }
+
+    &__size-box-label {
+        display: block;
+        margin-bottom: 7px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6F6E6E;
+    }
+
+    &__size-input {
+        margin-right: 9px;
+    }
+
+    &__quant-box {
+        width: 79px;
+        padding: 10px;
+        background-color: #FFFFFF;
+        box-shadow: $shadow;
+        position: absolute;
+    }
+
+    &__btn {
+        padding: 15px 57px 9px 24px;
+        display: flex;
+        border: 1px solid $main-color;
+        border-radius: 0;
+        background-color: #FFFFFF;
+    }
+
+    &__btn-text {
+        font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+        vertical-align: middle;
+        margin-left: 23px;
+    }
+}
