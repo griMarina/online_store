@@ -23,9 +23,11 @@
     @include flex;
     background-color: #fff;
     color: #000;
+    transition-duration: 0.4s;
 }
 
 .social-link:hover {
     background-color: $main-color;
     color: #fff;
+    transform: scale(1.1);
 }

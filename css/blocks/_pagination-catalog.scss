@@ -1,6 +1,5 @@
 .catalog-pagination-wrap {
     width: 284px;
-    box-sizing: border-box;
     padding: 15px;
     border: 1px solid #EBEBEB;
     border-radius: 3px;
@@ -16,12 +15,21 @@
     font-size: 16px;
     line-height: 19px;
     color: #EBEBEB;
+    transition-duration: 0.4s;
 }
 
 .catalog-pagination-link:hover {
+    transform: scale(1.4);
     color: $main-color;
 }
 
-.catalog-pagination-link .fas {
+.link-prev:not(hover) {
     color: #000;
 }
+
+.link-next:not(hover) {
+    color: #000;
+}
+
+
+

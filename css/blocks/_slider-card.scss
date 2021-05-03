@@ -12,6 +12,8 @@
         padding: 13px 17px;
         font-size: 21px;
         position: absolute;
+        transition-duration: 0.4s;
+
 
         &:hover {
             color: $main-color;

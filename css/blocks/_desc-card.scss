@@ -1,3 +1,4 @@
+
 .description {
     margin-bottom: 128px;
 
@@ -120,6 +121,24 @@
         border: 1px solid $main-color;
         border-radius: 0;
         background-color: #FFFFFF;
+        transition-duration: 0.4s;
+
+
+        & svg {
+            fill: #EF5B70;
+        }
+
+        &:hover {
+            background-color: $main-color;
+        }
+
+        &:hover svg {
+            fill: #FFFFFF;
+        }
+
+        &:hover span {
+            color: #FFFFFF ;
+        }
     }
 
     &__btn-text {
@@ -127,6 +146,6 @@
         line-height: 19px;
         color: #F26376;
         vertical-align: middle;
-        margin-left: 23px;
+        margin-left: 23px; 
     }
 }

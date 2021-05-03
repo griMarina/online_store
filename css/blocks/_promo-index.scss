@@ -18,6 +18,11 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
+    transition-duration: 1.1s;
+
+    &:hover {
+        transform: rotateX(360deg);
+    }
 }
 
 .promo-title-bold {
