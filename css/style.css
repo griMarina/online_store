@@ -1131,13 +1131,19 @@ body {
   margin-bottom: 0px;
 }
 
+.purchasing__img {
+  width: 262px;
+  height: 306px;
+  display: block;
+}
+
 .purchasing__item-desc {
   padding: 22px 97px 62px 31px;
 }
 
 .purchasing__item-heading {
   max-width: 200px;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
@@ -1152,6 +1158,10 @@ body {
   margin-bottom: 6px;
 }
 
+.purchasing__list-item:last-child {
+  margin-bottom: 0;
+}
+
 .purchasing__text-price {
   color: #F16D7F;
 }
@@ -1163,6 +1173,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: #656565;
+  border: 1px solid #EAEAEA;
 }
 
 .purchasing__btn-close {
