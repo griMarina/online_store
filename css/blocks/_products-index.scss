@@ -34,12 +34,7 @@
         border: 1px solid #FFFFFF;
         border-radius: 0;
         background-color: transparent;
-        transition-duration: 0.4s;
         cursor: pointer;
-
-        &:hover {
-            transform: scale(1.05);
-        }
 
         & svg {
             fill: #FFFFFF;
@@ -83,6 +78,9 @@
 .card-title {
     font-size: 13px;
     line-height: 16px;
+    text-decoration: none;
+    background-color: transparent;
+    color: #5D5D5D;
 }
 
 .card-text {

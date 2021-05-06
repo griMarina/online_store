@@ -16,6 +16,10 @@
     line-height: 19px;
     color: #EBEBEB;
     transition-duration: 0.4s;
+
+    .catalog-pagination-link::current {
+
+    }
 }
 
 .catalog-pagination-link:hover {

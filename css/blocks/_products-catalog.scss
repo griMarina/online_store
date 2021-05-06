@@ -12,6 +12,7 @@
 
 .product-filter-details {
     position: absolute;
+    z-index: 1;
 }
 
 .product-filter-details[open] {

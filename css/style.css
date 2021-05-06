@@ -91,6 +91,7 @@ body {
   background-color: #FFFFFF;
   padding: 37px 34px;
   position: absolute;
+  z-index: 1;
   right: 0;
   top: 81px;
   -webkit-transform: scaleY(0);
@@ -487,14 +488,7 @@ body {
   border: 1px solid #FFFFFF;
   border-radius: 0;
   background-color: transparent;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
   cursor: pointer;
-}
-
-.card__btn:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 .card__btn svg {
@@ -546,6 +540,9 @@ body {
 .card-title {
   font-size: 13px;
   line-height: 16px;
+  text-decoration: none;
+  background-color: transparent;
+  color: #5D5D5D;
 }
 
 .card-text {
@@ -691,6 +688,7 @@ body {
 
 .product-filter-details {
   position: absolute;
+  z-index: 1;
 }
 
 .product-filter-details[open] {
@@ -792,8 +790,8 @@ body {
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   position: absolute;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
   -webkit-transform-origin: top;
           transform-origin: top;
   -webkit-transform: scaleY(0);
