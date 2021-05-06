@@ -1,6 +1,7 @@
 .header {
     background-color: #222222;
     padding: 20px 0;
+    position: relative;
 }
 
 .header-wrap {
@@ -23,4 +24,75 @@
 
 .account-link {
     margin: 0 33px;
+}
+
+.menu-btn {
+    background-color: inherit;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: -21px;
+    right: -18px;
+    transition-duration: 0.4s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.nav {
+    width: 232px;
+    min-height: 764px;
+    background-color: #FFFFFF;
+    padding: 37px 34px;
+    position: absolute;
+    right: 0;
+    top: 81px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition-duration: 0.3s;
+    font-family: inherit;
+
+    &__overlay {
+        position: relative;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        @include text-font(700);
+    }
+
+    &__subtitle {
+        @include text-font(400);
+        color: $main-color;
+    }
+
+    &__list {
+        list-style-type: none;
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        margin-bottom: 11px;
+    }
+
+    &__link {
+        text-decoration: none;
+        @include text-font(400);
+        color: #6F6E6E;
+    }
+}
+
+.toogle {
+    display: none;
+}
+
+.toogle:checked ~ .nav {
+    transform: scaleY(1);
 }

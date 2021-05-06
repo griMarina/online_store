@@ -29,6 +29,7 @@ body {
 .header {
   background-color: #222222;
   padding: 20px 0;
+  position: relative;
 }
 
 .header-wrap {
@@ -61,6 +62,89 @@ body {
 
 .account-link {
   margin: 0 33px;
+}
+
+.menu-btn {
+  background-color: inherit;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: -21px;
+  right: -18px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.close-btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.nav {
+  width: 232px;
+  min-height: 764px;
+  background-color: #FFFFFF;
+  padding: 37px 34px;
+  position: absolute;
+  right: 0;
+  top: 81px;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  font-family: inherit;
+}
+
+.nav__overlay {
+  position: relative;
+}
+
+.nav__title {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.nav__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+}
+
+.nav__list {
+  list-style-type: none;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.nav__item {
+  margin-bottom: 11px;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.toogle {
+  display: none;
+}
+
+.toogle:checked ~ .nav {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
 .advantages {
