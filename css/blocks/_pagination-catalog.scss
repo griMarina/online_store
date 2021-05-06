@@ -1,6 +1,5 @@
 .catalog-pagination-wrap {
     width: 284px;
-    box-sizing: border-box;
     padding: 15px;
     border: 1px solid #EBEBEB;
     border-radius: 3px;
@@ -22,6 +21,10 @@
     color: $main-color;
 }
 
-.catalog-pagination-link .fas {
+.link-prev:not(hover) {
+    color: #000;
+}
+
+.link-next:not(hover) {
     color: #000;
 }
