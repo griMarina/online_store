@@ -100,6 +100,8 @@ body {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
   font-family: inherit;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .nav__overlay {
