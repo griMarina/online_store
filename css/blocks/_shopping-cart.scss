@@ -60,6 +60,11 @@
         background-color: #fff;
         border: none;
         cursor: pointer;
+        transition-duration: 0.4s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     &__btn {
@@ -75,6 +80,7 @@
             font-family: inherit;
             @include text-font;
             cursor: pointer;
+            transition-duration: 0.4s;
 
             &:hover {
                 background-color: $main-color;
@@ -85,11 +91,13 @@
         } 
 
         & a {
+            display: inline-block;
             text-decoration: none;
             border: 1px solid #A4A4A4;;
             padding: 16px 40px;
             @include text-font;
             color: #000000;
+            transition-duration: 0.4s;
 
             &:hover {
                 background-color: $main-color;
@@ -132,6 +140,7 @@
         line-height: 13px;
         color: #4A4A4A;
         cursor: pointer;
+        transition-duration: 0.4s;
 
         &:hover {
         background-color: $main-color;
@@ -186,8 +195,9 @@
         color: #FFFFFF;
         background-color: $main-color;
         padding: 16px 41px;
-        border: none;
+        border: 1px solid #FFFFFF;
         cursor: pointer;
+        transition-duration: 0.4s;
 
         &:hover {
         color: $main-color;

@@ -15,9 +15,11 @@
     font-size: 16px;
     line-height: 19px;
     color: #EBEBEB;
+    transition-duration: 0.4s;
 }
 
 .catalog-pagination-link:hover {
+    transform: scale(1.4);
     color: $main-color;
 }
 
@@ -28,3 +30,6 @@
 .link-next:not(hover) {
     color: #000;
 }
+
+
+

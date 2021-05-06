@@ -9,6 +9,12 @@
 
 .link {
     text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.2s;
+
+    &:hover {
+        transform: scale(1.07);
+    }
 }
 
 .logo-link {

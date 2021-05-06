@@ -60,4 +60,12 @@
     padding: 14.5px 38.5px;
     display: inline-block;
     margin-top: 18px;
+    transition-duration: 0.4s;
+
+    &:hover {
+        color: #FFFFFF;
+        background-color: $main-color;
+        border-color: #FFFFFF;
+    }
+
 }

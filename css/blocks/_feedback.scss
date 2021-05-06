@@ -31,13 +31,14 @@
 }
 
 .subscribe-title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 24px;
     color: #222224;
     line-height: 167.2%;
 }
 
 .subscribe-text {
+    font-weight: 400;
     font-size: 18px;
     line-height: 167.2%;
     color: #222224;
@@ -74,6 +75,7 @@
     line-height: 17px;
     font-family: inherit;
     cursor: pointer;
+    transition-duration: 0.4s;
 }
 
 .subscribe-form-btn:hover {
