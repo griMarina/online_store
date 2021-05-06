@@ -140,10 +140,19 @@
                      </div>
                  </details>
                </div>
-                <div class="product-sort-list">
-                    <div class="product-sort-item trending-now">TRENDING NOW</div>
-                    <div class="product-sort-item size">SIZE </div>
-                    <div class="product-sort-item price">PRICE</div>
+                <div class="product-sort">
+                    <div class="product-sort__item trending-now">TRENDING NOW</div>
+                    <div class="product-sort__item size">
+                        <input type="checkbox" id="check"> 
+                        <label for="check">SIZE</label>
+                        <div class="product-sort__size-drop">
+                            <label class="product-sort__size-box-label"><input class="product-sort__size-input" type="checkbox" name="size" value="xs"> XS</label>
+                            <label class="product-sort__size-box-label"><input class="product-sort__size-input" type="checkbox" name="size" value="s"> S</label>
+                            <label class="product-sort__size-box-label"><input class="product-sort__size-input" type="checkbox" name="size" value="m"> M</label>
+                            <label class="product-sort__size-box-label"><input class="product-sort__size-input" type="checkbox" name="size" value="l"> L</label>
+                        </div>
+                    </div>
+                    <div class="product-sort__item price">PRICE</div>
                 </div>
            </div>
            <div class="catalog-cards">
