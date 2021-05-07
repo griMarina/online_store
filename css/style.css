@@ -748,6 +748,9 @@ body {
 @media (max-width: 767px) {
   .products-cards {
     padding-top: 72px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .all-products-link {
     margin-top: 24px;
