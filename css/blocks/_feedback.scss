@@ -24,10 +24,10 @@
 }
 
 .subscribe {
-    width: 557px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-right: 9%;
 }
 
 .subscribe-title {
@@ -81,4 +81,46 @@
 .subscribe-form-btn:hover {
     background-color: #FFFFFF;
     color: $main-color;
+}
+
+/* tablet */
+
+@media (max-width: 1180px) {
+    .feedback {
+        flex-direction: column;
+        padding-top: 64px;
+        padding-bottom: 140px;
+        background-position-x: -10px;
+    }
+
+    .reviews {
+        padding-bottom: 30px;
+        margin-bottom: 48px;
+    }
+
+    .subscribe {
+        margin-right: 0;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 767px) {
+    .feedback {
+        padding-bottom: 109px;
+    }
+
+    .reviews-text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .subscribe-title {
+        line-height: 153.2%;
+    }
+
+    .subscribe-text {
+        font-size: 14px;
+        line-height: 153.2%;
+    }
 }

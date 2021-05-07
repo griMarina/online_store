@@ -10,6 +10,7 @@
 }
 
 .products-title {
+    font-weight: 400;
     font-size: 30px;
     line-height: 36px;
     margin-bottom: 6px;
@@ -113,3 +114,37 @@
     }
 
 }
+
+/* tablet */
+
+@media (max-width: 1180px) {
+    .products {
+        margin-bottom: 64px;
+    }
+
+    .products-cards {
+        padding-top: 72px;
+    }
+
+    .card {
+        margin-bottom: 16px;
+    }
+
+    .all-products-link {
+        margin-top: 16px;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 767px) {
+
+    .products-cards {
+        padding-top: 72px;
+    }
+
+    .all-products-link {
+        margin-top: 24px;
+    }
+}
+

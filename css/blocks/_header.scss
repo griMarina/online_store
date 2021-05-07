@@ -98,3 +98,15 @@
 .toogle:checked ~ .nav {
     transform: scaleY(1);
 }
+
+/* mobile */
+
+@media (max-width: 767px) {
+    .account-link {
+        display: none;
+    }
+    
+    .cart-link {
+        display: none;
+    }
+}
