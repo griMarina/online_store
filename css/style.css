@@ -790,13 +790,15 @@ body {
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   position: absolute;
+  top: 22px;
+  left: 175px;
+  z-index: 1;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
   -webkit-transform-origin: top;
           transform-origin: top;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
-  top: 22px;
 }
 
 .product-sort__size-box-label {
@@ -1034,15 +1036,21 @@ body {
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   position: absolute;
+  margin-top: 5px;
 }
 
-.description__size-drop {
+.description__color-box input {
+  border: 1px solid #EBEBEB;
+}
+
+.description__size-box {
   width: 79px;
   padding: 10px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   position: absolute;
+  margin-top: 5px;
 }
 
 .description__size-box-label {
@@ -1064,6 +1072,11 @@ body {
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   position: absolute;
+  margin-top: 5px;
+}
+
+.description__quant-box input {
+  border: 1px solid #EBEBEB;
 }
 
 .description__btn {

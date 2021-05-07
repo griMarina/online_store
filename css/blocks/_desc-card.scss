@@ -82,17 +82,20 @@
         background-color: #FFFFFF;
         box-shadow: $shadow;
         position: absolute;
-        
+        margin-top: 5px; 
+          
+        & input {
+            border: 1px solid #EBEBEB;
+        }     
     }
 
-    &__size-drop {
+    &__size-box {
         width: 79px;
         padding: 10px;
         background-color: #FFFFFF;
         box-shadow: $shadow;
         position: absolute;
-        
-        
+        margin-top: 5px;
     }
 
     &__size-box-label {
@@ -113,6 +116,11 @@
         background-color: #FFFFFF;
         box-shadow: $shadow;
         position: absolute;
+        margin-top: 5px;
+
+        & input {
+            border: 1px solid #EBEBEB;
+        }   
     }
 
     &__btn {

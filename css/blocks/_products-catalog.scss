@@ -111,10 +111,13 @@
         background-color: #FFFFFF;
         box-shadow: $shadow;
         position: absolute;
+        top: 22px;
+        left: 175px;
+        z-index: 1;
         transition-duration: 0.3s;
         transform-origin: top;
         transform: scaleY(0);
-        top: 22px;
+        
     }
 
     &__size-box-label {
