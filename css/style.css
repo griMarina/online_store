@@ -852,8 +852,16 @@ body {
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   position: absolute;
+  margin-top: 5px;
 }
 
+<<<<<<< Updated upstream
+=======
+.description__color-box input {
+  border: 1px solid #EBEBEB;
+}
+
+>>>>>>> Stashed changes
 .description__size-box {
   width: 79px;
   padding: 10px;
@@ -861,6 +869,7 @@ body {
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   position: absolute;
+  margin-top: 5px;
 }
 
 .description__size-box-label {
@@ -882,6 +891,11 @@ body {
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   position: absolute;
+  margin-top: 5px;
+}
+
+.description__quant-box input {
+  border: 1px solid #EBEBEB;
 }
 
 .description__btn {
