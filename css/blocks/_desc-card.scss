@@ -82,12 +82,11 @@
         background-color: #FFFFFF;
         box-shadow: $shadow;
         position: absolute;
-        margin-top: 5px;
-
+        margin-top: 5px; 
+          
         & input {
             border: 1px solid #EBEBEB;
-        }
-        
+        }     
     }
 
     &__size-box {
@@ -121,7 +120,7 @@
 
         & input {
             border: 1px solid #EBEBEB;
-        }
+        }   
     }
 
     &__btn {

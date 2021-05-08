@@ -31,3 +31,18 @@
     color: #fff;
     transform: scale(1.1);
 }
+
+/* mobile */
+
+@media (max-width: 767px) {
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 43px;
+        padding-bottom: 9px;
+    }
+
+    .social {
+        margin-bottom: 40px;
+    }
+}
