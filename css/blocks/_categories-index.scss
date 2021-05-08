@@ -56,9 +56,10 @@
     background-repeat: no-repeat;
 }
 
-/* tablet */
+// tablet
 
-@media (max-width: 1180px) {
+@media (max-width: 1192px) {
+    
     .categories {
         padding-top: 20px;
         padding-bottom: 155px;
@@ -66,8 +67,8 @@
 
     .category-item {
         min-height: 167px;
-        width: 31.2%;
-        background-size: contain;
+        background-size: cover;
+        background-position-x: center;
     }
 
     .category-accesories {
@@ -76,9 +77,9 @@
     }
 }
 
-/* mobile */
+// mobile
 
-@media (max-width: 767px) {
+@media (max-width: 788px) {
     .categories {
         padding-top: 64px;
         padding-bottom: 64px;
@@ -86,16 +87,11 @@
 
     .category-item {
         min-height: 247px;
-        width: 100%;
-        margin-bottom: 32px;
-        background-size: cover;
-        background-position-x: center;
+        width: 100%;   
+        margin-bottom: 32px; 
     }
 
     .category-accesories {
         min-height: 111px;
-        margin-top: 0;
     }
-
-
 }

@@ -36,14 +36,13 @@
     color: $main-color;
 }
 
-/* tablet */
-
-@media (max-width: 1180px) {
-
+// tablet
+     
+@media (max-width: 1192px) {
     .promo-wrap {
         min-height: 368px;
         background-size: contain;
-        background-position-x: -20px;
+        background-position: 0 0;
     }
 
     .promo-title {
@@ -55,20 +54,19 @@
         font-size: 44px;
         line-height: 53px;
     }
-
 }
 
-/* mobile */
+// mobile
 
-@media (max-width: 767px) {
+@media (max-width: 788px) {
     .promo-wrap {
         background-image:none;
     }
 
     .promo-title {
-        margin: 0 auto;
         font-size: 20px;
         line-height: 24px;
+        margin: 0 auto;
         width: auto;
     }
 

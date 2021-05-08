@@ -33,10 +33,9 @@
     color: #FBFBFB;
 }
 
-/* tablet */
+// tablet
 
-@media (max-width: 1180px) {
-    
+@media (max-width: 1192px) {
     .advantages {
         flex-direction: column;
         align-items: center;
@@ -49,9 +48,7 @@
     }
 }
 
-/* mobile */
-
-@media (max-width: 767px) {
+@media (max-width: 788px) {
 
     .advantages {
         padding-bottom: 81px;

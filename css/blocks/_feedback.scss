@@ -83,14 +83,14 @@
     color: $main-color;
 }
 
-/* tablet */
+// tablet
 
-@media (max-width: 1180px) {
+@media (max-width: 1192px) {
     .feedback {
         flex-direction: column;
         padding-top: 64px;
         padding-bottom: 140px;
-        background-position-x: -10px;
+        background-position-x: -3px;
     }
 
     .reviews {
@@ -103,9 +103,9 @@
     }
 }
 
-/* mobile */
+// mobile
 
-@media (max-width: 767px) {
+@media (max-width: 788px) {
     .feedback {
         padding-bottom: 109px;
     }
