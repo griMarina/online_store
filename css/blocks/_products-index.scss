@@ -28,6 +28,9 @@
     background-color: #F8F8F8;
     margin-bottom: 30px;
     margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 
         &:nth-child(3n) {
             margin-right: 0;
@@ -75,29 +78,27 @@
     }
 }
 
-.card-desc {
-    text-align: left;
-    padding: 25px 28px 20px 16px;
-}
-
 .card-title {
+    margin: 24px 28px 12px 16px;
     font-size: 13px;
     line-height: 16px;
     text-decoration: none;
     background-color: transparent;
     color: #5D5D5D;
+    display: block;
 }
 
 .card-text {
     font-weight: 300;
-    margin-top: 12px;
-    margin-bottom: 18px;
+    margin: 0 28px 18px 16px;
 }
 
 .card-price {
     font-size: 16px;
     line-height: 19px;
     color:$main-color;
+    display: block;
+    margin: auto 28px 20px 16px;
 }
 
 .all-products-link {
