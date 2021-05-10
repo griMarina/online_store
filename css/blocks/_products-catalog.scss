@@ -104,6 +104,7 @@
     @include text-font(400);
     color: #6F6E6E;
     position: relative;
+    margin-left: 275px;
 
     &__size-drop {
         width: 79px;
@@ -167,10 +168,6 @@
     .filter-summary {
         padding-left: 0;
     }
-
-    // .product-sort {
-
-    // }
 }
 
 @media (max-width: 1155px) {
@@ -204,6 +201,7 @@
         max-height: 17px;
         font-size: 12px;
         line-height: 14px;
+        margin-left: 0;
     }
 
     .catalog-cards {
