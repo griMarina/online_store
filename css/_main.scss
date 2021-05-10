@@ -68,3 +68,13 @@ mobile
         padding: 0 16px;
     }
 }
+
+@media (max-width: 788px) {
+    .wrapper {
+        padding: 0 8px;
+    }
+
+    .center {
+        padding: 0 8px;
+    }
+}

@@ -80,6 +80,7 @@
 
 .card-title {
     margin: 24px 28px 12px 16px;
+    font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     text-decoration: none;
@@ -122,7 +123,7 @@
 
 // tablet
 
-@media (max-width: 1192px) {
+@media (max-width: 1195px) {
     .card {
         margin-right: 16px;
         margin-bottom: 16px;
@@ -147,7 +148,6 @@
 
     .products-cards {
         padding-top: 72px;
-        justify-content: center;
     }
 
     .all-products-link {
@@ -155,7 +155,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 739px) {
 
     .card {
         margin-right: 0;
