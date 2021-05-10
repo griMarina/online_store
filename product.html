@@ -79,7 +79,11 @@
            </div>
         </section>
         <section class="slider center">
-            <img class="slider__image" src="img/product-img.png" alt="product image">
+            <picture class="slider__image">
+                <source srcset="img/slider-img-med.jpg" media="(max-width: 1195px)">
+                <source srcset="img/slider-img-small.jpg" media="(max-width: 788px)">
+                <img src="img/slider-img-big.jpg" alt="product's image">
+            </picture>
             <button class="slider__btn slider__btn_left">
                 <i class="fas fa-chevron-left"></i>
             </button>
@@ -135,7 +139,7 @@
         <section class="product-cards center">
             <h2 class="hidden">Other products</h2>
             <div class="product-cards-content">
-                <div class="card">
+                <div class="card card-product">
                     <div class="card__img">
                         <img src="img/item-4.png" alt="item's image">
                     <div class="card__overlay">
@@ -151,7 +155,7 @@
                     <p class="text card-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <span class="card-price">$52.00</span>
                 </div>
-                <div class="card">
+                <div class="card card-product">
                     <div class="card__img">
                         <img src="img/item-3.png" alt="item's image">
                     <div class="card__overlay">
@@ -167,7 +171,7 @@
                     <p class="text card-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <span class="card-price">$52.00</span>
                  </div>
-                 <div class="card">
+                 <div class="card card-product">
                     <div class="card__img">
                         <img src="img/item-6.png" alt="item's image">
                     <div class="card__overlay">
