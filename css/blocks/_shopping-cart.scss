@@ -6,7 +6,7 @@
 
     &__item {
         display: flex;
-        max-width: 652px;
+        min-width: 652px;
         position: relative;
         box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
         font-size: 22px;
@@ -265,6 +265,7 @@
         }
 
         &__item {
+            min-width: 57%;
             height: 188px;
             @include text-font(400);
         }

@@ -164,17 +164,26 @@
 
 // tablet
 
-@media (max-width: 1155px) {
+@media (max-width: 1162px) {
 
     .description {
         &__hr {
             min-width: 83%;
         }
     }
+
+    .product-cards-content {
+        flex-direction: row-reverse;    
+    }
+
     .card-product {
 
+        &:first-child {
+            margin-right: 16px;
+        }
+        
         &:nth-child(2) {
-            margin-right: 0;
+            margin-right: 16px;
         }
 
         &:nth-child(3) {
@@ -189,7 +198,7 @@
     }
 }
 
-@media (max-width: 765px) {
+@media (max-width: 767px) {
 
     .description {
 
@@ -220,12 +229,30 @@
 
     .card-product {
 
+        &:first-child {
+            margin-right: 16px;
+        }
+
         &:nth-child(2) {
             display: none;
         }
 
         &:nth-child(3) {
-            display: flex;        
+            display: flex;  
+            margin-right: 16px;      
+        }
+    }
+}
+
+@media (max-width: 735px) {
+    .card-product {
+
+        &:first-child {
+            margin-right: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;      
         }
     }
 }
