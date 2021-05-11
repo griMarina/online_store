@@ -1614,6 +1614,7 @@ mobile
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+  text-transform: uppercase;
   cursor: pointer;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
@@ -1633,6 +1634,7 @@ mobile
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+  text-transform: uppercase;
   color: #000000;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
@@ -1809,6 +1811,35 @@ mobile
   }
   .purchasing__list-item {
     margin-bottom: 4px;
+  }
+  .purchasing__btn-close {
+    -webkit-transform: scale(0.55);
+            transform: scale(0.55);
+    top: 13px;
+    right: 12px;
+  }
+  .purchasing__btn-close:hover {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  .purchasing__btn {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 30px;
+  }
+  .purchasing__btn button {
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 2.5%;
+    text-transform: none;
+    padding: 9px 18px;
+  }
+  .purchasing__btn a {
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: none;
+    padding: 9px 18px;
   }
 }
 
