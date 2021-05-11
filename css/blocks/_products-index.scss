@@ -129,15 +129,37 @@
         margin-bottom: 16px;
 
         &:nth-child(3n) {
-            margin-right: 16px;
+            margin-right: 0;
         }
     }
 }
 
 @media (max-width: 1190px) {
+
+    .products {
+        padding: 0 15px;
+    }
+    
     .card {
         &:nth-child(2n) {
             margin-right: 16px;
+        }
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 1141px) {
+    .card {
+    
+        &:nth-child(3n) {
+            margin-right: 16px;
+        }
+
+        &:nth-child(2n) {
+            margin-right: 0;
         }
     }
 }
@@ -155,7 +177,11 @@
     }
 }
 
-@media (max-width: 739px) {
+@media (max-width: 767px) {
+
+    .products {
+        padding: 0 24px;
+    }
 
     .card {
         margin-right: 0;
