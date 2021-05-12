@@ -47,7 +47,7 @@
     }
 
     &__hr {
-        width: 642px;
+        min-width: 56%;
         border: none;
         border-top: 1px solid #EAEAEA;
         margin-top: 65px;
@@ -82,12 +82,11 @@
         background-color: #FFFFFF;
         box-shadow: $shadow;
         position: absolute;
-        margin-top: 5px;
-
+        margin-top: 5px; 
+          
         & input {
             border: 1px solid #EBEBEB;
-        }
-        
+        }     
     }
 
     &__size-box {
@@ -121,7 +120,7 @@
 
         & input {
             border: 1px solid #EBEBEB;
-        }
+        }   
     }
 
     &__btn {
@@ -156,5 +155,104 @@
         color: #F26376;
         vertical-align: middle;
         margin-left: 23px; 
+    }
+}
+
+.product-cards-content {
+    justify-content: center;
+}
+
+// tablet
+
+@media (max-width: 1162px) {
+
+    .description {
+        &__hr {
+            min-width: 83%;
+        }
+    }
+
+    .product-cards-content {
+        flex-direction: row-reverse;    
+    }
+
+    .card-product {
+
+        &:first-child {
+            margin-right: 16px;
+        }
+        
+        &:nth-child(2) {
+            margin-right: 16px;
+        }
+
+        &:nth-child(3) {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .description {
+        border: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .description {
+
+        &__product-title {
+            margin-bottom: 32px;
+        }
+
+        &__product-text {
+            margin-right: 16px;
+            margin-left: 16px;
+
+            & br {
+                display: none;
+            }
+        }
+
+        &__hr {
+            min-width: 47%;
+            margin-top: 32px;
+            margin-bottom: 49px;
+        }
+
+        &__sort-title {
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+
+    .card-product {
+
+        &:first-child {
+            margin-right: 16px;
+        }
+
+        &:nth-child(2) {
+            display: none;
+        }
+
+        &:nth-child(3) {
+            display: flex;  
+            margin-right: 16px;      
+        }
+    }
+}
+
+@media (max-width: 735px) {
+    .card-product {
+
+        &:first-child {
+            margin-right: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;      
+        }
     }
 }

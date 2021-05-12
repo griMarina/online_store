@@ -8,11 +8,12 @@
     background-position-x: -226px;
     background-position-y: bottom;
     background-repeat: no-repeat;
-    @include flex (flex-end);
+    @include flex ();
 }
 
 .promo-title {
     width: 50%;
+    margin-left: 53%;
     border-left: 12px solid $main-color;
     padding-left: 16px;
     font-weight: 700;
@@ -33,4 +34,44 @@
 
 .promo-title-pink {
     color: $main-color;
+}
+
+// tablet
+     
+@media (max-width: 1192px) {
+    .promo-wrap {
+        min-height: 368px;
+        background-size: contain;
+        background-position: 0 0;
+    }
+
+    .promo-title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .promo-title-bold {
+        font-size: 44px;
+        line-height: 53px;
+    }
+}
+
+// mobile
+
+@media (max-width: 788px) {
+    .promo-wrap {
+        background-image:none;
+    }
+
+    .promo-title {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .promo-title-bold {
+        font-size: 38px;
+        line-height: 46px;
+    }
 }
