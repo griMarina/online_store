@@ -251,6 +251,11 @@
         &__form {
             width: 360px;
         }
+
+        &__total {
+            align-self: start;
+            margin-top: 40px;
+        }
     }
 }
 
@@ -314,6 +319,11 @@
                 text-transform: none;
                 padding: 11px 36px;
             }
+        }
+
+        &__total {
+            align-self: auto;
+            margin-top: 0;
         }
     }
     

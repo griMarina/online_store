@@ -1840,6 +1840,12 @@ mobile
   .purchasing__form {
     width: 360px;
   }
+  .purchasing__total {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 788px) {
@@ -1896,6 +1902,12 @@ mobile
     line-height: 14px;
     text-transform: none;
     padding: 11px 36px;
+  }
+  .purchasing__total {
+    -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;
+    margin-top: 0;
   }
 }
 
