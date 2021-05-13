@@ -2,13 +2,14 @@
     margin-top: 64px;
     margin-bottom: 96px;
     display: flex;
+    justify-content: space-between;
 
     & fieldset {
         border: none;
     }
 
     &__form {
-        min-width: 360px;
+        width: 360px;
     }
 
     &__input {
@@ -91,10 +92,10 @@
     }
 
     &__benefits {
+        width: 652px;
         font-weight: 300;
         font-size: 24px;
         line-height: 29px;
-        margin-left: 128px;
     }
 
     &__benefits-title {
@@ -111,11 +112,40 @@
 
         & li {
             margin-top: 16px;
+            background-image: url(../img/check-list.svg);
+            background-repeat: no-repeat;
+            background-position-y: center;
+            padding-left: 42px;        
+        }
+    }
+}
+
+@media (max-width: 1195px) {
+    .registration {
+        &__form {
+            margin-right: 22px;
+            min-width: 360px;
         }
 
-        & li::before {
-            content: url(../img/check-list.svg);
-            padding-right: 23px;
+        &__benefits {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}
+
+@media (max-width: 788px) {
+    .registration {
+        flex-direction: column;
+
+        &__form {
+            width: 100%;
+        }
+
+        &__benefits {
+            width: 100%;
+            margin-top: 40px;
         }
     }
 }

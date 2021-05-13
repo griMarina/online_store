@@ -1495,7 +1495,7 @@ mobile
             flex-direction: row-reverse;
   }
   .card-product:first-child {
-    margin-right: 16px;
+    margin-right: 0;
   }
   .card-product:nth-child(2) {
     margin-right: 16px;
@@ -1512,6 +1512,9 @@ mobile
 }
 
 @media (max-width: 767px) {
+  .product-cards-content {
+    padding: 0 20px;
+  }
   .description__product-title {
     margin-bottom: 32px;
   }
@@ -1531,9 +1534,6 @@ mobile
     font-size: 10px;
     line-height: 12px;
   }
-  .card-product:first-child {
-    margin-right: 16px;
-  }
   .card-product:nth-child(2) {
     display: none;
   }
@@ -1541,7 +1541,6 @@ mobile
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 16px;
   }
 }
 
@@ -1871,9 +1870,6 @@ mobile
             transform: scale(0.75);
   }
   .purchasing__btn {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin-top: 30px;
   }
   .purchasing__btn button {
@@ -1881,13 +1877,13 @@ mobile
     line-height: 14px;
     margin-right: 2.5%;
     text-transform: none;
-    padding: 9px 18px;
+    padding: 11px 36px;
   }
   .purchasing__btn a {
     font-size: 12px;
     line-height: 14px;
     text-transform: none;
-    padding: 9px 18px;
+    padding: 11px 36px;
   }
 }
 
@@ -1897,6 +1893,9 @@ mobile
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .registration fieldset {
@@ -1904,7 +1903,7 @@ mobile
 }
 
 .registration__form {
-  min-width: 360px;
+  width: 360px;
 }
 
 .registration__input {
@@ -2009,10 +2008,10 @@ mobile
 }
 
 .registration__benefits {
+  width: 652px;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  margin-left: 128px;
 }
 
 .registration__benefits-title {
@@ -2030,11 +2029,38 @@ mobile
 
 .registration__benefits-list li {
   margin-top: 16px;
+  background-image: url(../img/check-list.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  padding-left: 42px;
 }
 
-.registration__benefits-list li::before {
-  content: url(../img/check-list.svg);
-  padding-right: 23px;
+@media (max-width: 1195px) {
+  .registration__form {
+    margin-right: 22px;
+    min-width: 360px;
+  }
+  .registration__benefits {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 788px) {
+  .registration {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .registration__form {
+    width: 100%;
+  }
+  .registration__benefits {
+    width: 100%;
+    margin-top: 40px;
+  }
 }
 
 @font-face {

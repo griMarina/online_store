@@ -298,7 +298,6 @@
         }
 
         &__btn {
-            justify-content: space-between;
             margin-top: 30px;
 
             & button {
@@ -306,14 +305,14 @@
                 line-height: 14px;
                 margin-right: 2.5%;
                 text-transform: none;
-                padding: 9px 18px;
+                padding: 11px 36px;
             }
 
             & a {
                 font-size: 12px;
                 line-height: 14px;
                 text-transform: none;
-                padding: 9px 18px;
+                padding: 11px 36px;
             }
         }
     }
