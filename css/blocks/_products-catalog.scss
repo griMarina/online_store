@@ -8,11 +8,12 @@
     min-width: 90px;
     margin-right: 2px;
     position: relative;
+    z-index: 2;
 }
 
 .product-filter-details {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 
 .product-filter-details[open] {
@@ -105,6 +106,8 @@
     color: #6F6E6E;
     position: relative;
     margin-left: 275px;
+    z-index: 1;
+
 
     &__size-drop {
         width: 79px;
@@ -114,7 +117,6 @@
         position: absolute;
         top: 22px;
         left: 175px;
-        z-index: 1;
         transition-duration: 0.3s;
         transform-origin: top;
         transform: scaleY(0);
@@ -224,8 +226,16 @@
 
 @media (max-width: 788px) {
 
+    .product-sorting {
+        justify-content: space-between;
+    }
+
     .product-filter-list {
         min-width: 10px;
+    }
+
+    .product-filter-details[open] {
+        margin-top: -33px;
     }
 
     .filter-summary {

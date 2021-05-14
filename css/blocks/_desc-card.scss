@@ -179,7 +179,7 @@
     .card-product {
 
         &:first-child {
-            margin-right: 16px;
+            margin-right: 0;
         }
         
         &:nth-child(2) {
@@ -199,6 +199,10 @@
 }
 
 @media (max-width: 767px) {
+
+    .product-cards-content {
+        padding: 0 20px;
+    }
 
     .description {
 
@@ -229,9 +233,9 @@
 
     .card-product {
 
-        &:first-child {
-            margin-right: 16px;
-        }
+        // &:first-child {
+        //     margin-right: 0;
+        // }
 
         &:nth-child(2) {
             display: none;
@@ -239,7 +243,7 @@
 
         &:nth-child(3) {
             display: flex;  
-            margin-right: 16px;      
+            // margin-right: 0;      
         }
     }
 }
